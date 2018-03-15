@@ -1,0 +1,136 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<theme id='default'>
+	<url>,all_urls,</url>
+	<vars>
+		<group title='Body' name='body'>
+			<var type='color' title='Background Color' name='background-color' default_value='rgba(0,0,0,1)'/>
+		</group>
+		<group title='Content' name='content'>
+			<var type='color' title='Background Color' name='background-color' default_value='rgba(0,0,0,0.5)'/>
+		</group>
+		<group title='Toggle' name='toggle'>
+			<var type='color' title='Background Color' name='background-color' default_value='rgba(0,100,100,0.6)'/>
+		</group>
+		<group title='Text' name='text'>
+			<var type='color' title='Color' name='color' default_value='rgba(255,255,255,1)'/>
+		</group>
+		<group title='Link' name='link'>
+			<var type='color' title='Color' name='color' default_value='rgba(255,255,0,1)'/>
+		</group>
+		<group title='Link Hover' name='link-hover'>
+			<var type='color' title='Color' name='color' default_value='rgba(160,160,0,1)'/>
+		</group>
+		<group title='Selection' name='selection'>
+			<var type='color' title='Background Color' name='background-color' default_value='rgba(0,50,50,0.5)'/>
+		</group>
+	</vars>
+	<cssText>
+	[auto-webstyle-background-none],*{background-color:rgba(0,0,0,0) !important;border:none !important;}
+	[auto-webstyle-toggle]{background:/*toggle.background-color*/ !important;}
+	body{background:/*body.background-color*/ fixed /*background-image-url*/ no-repeat !important;}
+	body [auto-webstyle-content]{background:/*content.background-color*/ !important;}
+	a{color:/*link.color*/ !important;}a:hover{color:/*link-hover.color*/ !important;}
+	body *:not(a){color:/*text.color*/ !important;}
+	::-moz-selection{background:/*selection.background-color*/ !important;}
+	body [auto-webstyle-post-list]>*{transition:all 0.5s !important;-webkit-transition:all 0.5s !important;}';
+	body [auto-webstyle-post-list]>*:hover{position:relative;z-index:1000;transform:scale3d(1.05,1.05,1.05);-webkit-transform:scale3d(1.2,1.2,1.2);background:rgba(0,0,0,0.6) !important}
+	</cssText>
+</theme>
+<theme id='google search 1' default='true'>
+	<url>google.*</url>
+	<url>www.google.*</url>
+	<vars>
+		<group title='Body' name='body'>
+			<var type='color' title='Background Color' name='background-color' default_value='rgba(20,20,20,1)'/>
+		</group>
+		<group title='Toggle' name='toggle'>
+			<var type='color' title='Background Color' name='background-color' default_value='rgba(0,100,100,0.8)'/>
+		</group>
+		<group title='Text' name='text'>
+			<var type='color' title='Color' name='color' default_value='rgba(255,255,255,1)'/>
+		</group>
+		<group title='Link' name='link'>
+			<var type='color' title='Color' name='color' default_value='rgba(255,255,0,1)'/>
+		</group>
+		<group title='Link Hover' name='link-hover'>
+			<var type='color' title='Color' name='color' default_value='rgba(200,200,0,1)'/>
+		</group>
+		<group title='Selection' name='selection'>
+			<var type='color' title='Background Color' name='background-color' default_value='rgba(0,150,150,0.2)'/>
+		</group>
+		<group title='Search Result' name='search-result'>
+			<var type='color' title='Background Color 1' name='background-color-1' default_value='rgba(0,0,0,0.8)'/>
+			<var type='color' title='Background Color 2' name='background-color-2' default_value='rgba(0,0,0,0.5)'/>
+		</group>
+		<group title='Search Input' name='input-search'>
+			<var type='color' title='Border Color' name='border-color' default_value='rgba(100,100,100,1)'/>
+			<var type='color' title='Item Hover Color' name='item-hover-background-color' default_value='rgba(0,160,160,0.6)'/>
+			<var type='color' title='Text Color' name='text-color' default_value='rgba(255,255,255,1)'/>
+		</group>
+		<group title='Button' name='button'>
+			<var type='color' title='Background Color' name='background-color' default_value='rgba(0,0,0,0.2)'/>
+			<var type='color' title='Hover Background Color' name='hover-background-color' default_value='rgba(10,10,10,0.5)'/>
+			<var type='color' title='Border Color' name='border-color' default_value='rgba(0,150,150,0.2)'/>
+		</group>
+	</vars>
+	<cssText>
+	[auto-webstyle-background-none],*{background-color:rgba(0,0,0,0) !important;}
+	[auto-webstyle-toggle],.sbdd_a{background:/*toggle.background-color*/ !important;}
+	body{background:/*body.background-color*/ fixed /*background-image-url*/ no-repeat !important;}
+	a{color:/*link.color*/ !important;}a:hover{color:/*link-hover.color*/ !important;}
+	body *:not(a){color:/*text.color*/ !important;}
+	::-moz-selection{background:/*selection.background-color*/ !important;}
+	body [auto-webstyle-post-list]>*{transition:all 0.5s !important;-webkit-transition:all 0.5s !important;}';
+	body [auto-webstyle-post-list]>*:hover{position:relative;z-index:1000;transform:scale3d(1.05,1.05,1.05);-webkit-transform:scale3d(1.2,1.2,1.2);background:rgba(0,0,0,0.6) !important}
+	.jhp input[type="submit"],.sbdd_a input{background-image:none !important;background-color:/*button.background-color*/ !important;border:1px solid /*button.border-color*/ !important;}
+	.jhp input[type="submit"]:hover,.sbdd_a input:hover{background-color:/*button.hover-background-color*/ !important;}
+	.hdtb-td-c{opacity:0;}.hdtb-td-o{opacity:1;}#hdtbMenus{transition:all 0.2s;}
+	#rhs_block .kp-blk,.nrgt,.rc{background:linear-gradient(135deg,/*search-result.background-color-1*/,/*search-result.background-color-2*/) !important;padding:10px;border-radius:10px;}
+	.sbibod{border:1px solid /*input-search.border-color*/ !important;}.sbibod input{color:/*input-search.text-color*/ !important;}
+	.sbdd_a li:hover{background:/*input-search.item-hover-background-color*/ !important;}
+	/*#top_nav{background:linear-gradient(135deg,/*top-menu.background-color-1*/,/*top-menu.background-color-2*/) !important;}*/
+	</cssText>
+</theme>
+<theme id='3' default='t Rue'>
+	<url>youtube.com</url>
+	<url>www.youtube.com</url>
+	<vars>
+		<group title='Body1' name='body1'>
+			<var type='color' title='Background' name='background' default_value='#000'/>
+		</group>
+	</vars>
+	<cssText>
+	zzzzzzz
+	</cssText>
+</theme>
+<theme id='4' default='true'>
+	<url>twitter.com</url>
+	<url>www.twitter.com</url>
+	<vars>
+		<group title='Body2' name='body2'>
+			<var type='color' title='Background' name='background' default_value='#000'/>
+		</group>
+	</vars>
+	<cssText>
+	xxxxxxxxxx
+	</cssText>
+</theme>
+<theme id='bing.com 1' default='t Rue'>
+	<url>bing.com</url>
+	<url>www.bing.com</url>
+	<vars>
+		<group title='Body1' name='body1'>
+			<var type='color' title='Background' name='background' default_value='#000'/>
+		</group>
+	</vars>
+	<cssText>
+	zzzzzzz
+	</cssText>
+</theme>
+<script type="text/javascript" src="background.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+body{
+	background:linear-gradient(#000,#444);
+	min-height:400px;
+	padding:10px;
+}
+.rgb{
+width:20px;
+height:20px;
+display:inline-block;
+}
+.rgb.red{
+	background:red;
+}
+.rgb.green{
+	background:green;
+}
+.rgb.blue{
+	background:blue;
+}
+.colors tr>td:first-child{
+	text-align:right;
+	color:red;
+}
+body{
+	color:red;
+}
+input[type=range]{
+	width:255px;
+}
+#status{
+	text-align:center;
+}
+#change_status{
+	display:inline-block;
+	width:50px;
+	padding:5px;
+	cursor:pointer;
+	background:#222;
+}
+#change_status:hover{
+	background:#444;
+}
+.colors-outer>.title{
+	font-size:24px;
+	font-weight:bold;
+	border-bottom:1px solid #000;
+}
+#colors .title,.group .title{
+	cursor:pointer;
+	color:#fff;
+	padding:5px;
+	margin:2px;
+	background:#0000aa;
+}
+#colors .title:hover,.group .title:hover{
+	background:#0000ff;
+}
+[color-picker]{
+	display:none;
+}
+.color-picker{
+	height:0px;
+	overflow:hidden;
+	transition:height 0.5s;
+	-webkit-transition:height 0.5s;
+}
+.color-choice-outer{
+	text-align:center;
+}
+.color-choice{
+	width:60px;
+	height:20px;
+	display:inline-block;
+}
+#free-theme{
+	text-align:center;
+	margin-right:10px;
+	cursor:pointer;
+	width:200px;
+	float:left;
+	font-size:16px;
+	font-weight:bold;
+	color:#00ffff;
+	border:1px solid #00ffff;
+	border-radius:5px;
+	padding:5px;
+}
+#background-image{
+	margin-top:20px;
+}
+#background-image input{
+	width:320px;
+}
+#background-image .edit{
+	text-align:right;
+	cursor:pointer;
+}
+#status:after{
+	display:block;
+	clear:both;
+	content:'';
+}
+#set_status{
+	float:right;
+	text-align:center;
+	cursor:pointer;
+	width:40px;
+	font-weight:bold;
+	padding:5px;
+	border-radius:20px;
+	color:#fff;
+}
+#set_status.off{
+	background:linear-gradient(to right,#222,#444);
+}
+#set_status.off:hover{
+	background:linear-gradient(to right,#444,#666);
+}
+#set_status.on{
+	background:linear-gradient(to right,#009900,#007700);
+}
+#set_status.on:hover{
+	background:linear-gradient(to right,#007700,#005500);
+}
+*:not(.content-background):not(.selection):not(.toggle-background)>.color-picker .opacity{
+	display:none;
+}
+.color-picker-node{
+	background:rgba(0,0,0,0.5);
+	text-align:center;
+	position:fixed;
+}
+.color-picker-node div{
+	margin:5px;
+}
+.color-choice{
+	width:100px;
+	height:20px;
+	display:inline-block;
+	border-radius:10px;
+}
+.color-choice-outer{
+	width:200px;
+	text-align:center;
+	
+}
+.color-picker-button{
+	width:40px;
+	height:16px;
+	border-radius:4px;
+	display:inline-block;
+	background:red;
+	border:1px solid #999999;
+}
+.display-none{
+	display:none;
+}
+.vars-outer .var-title{
+	margin-right:10px;
+}
+.vars-outer{
+	padding:5px;
+}
+select{
+	margin:5px;
+}
+#thunghiem{
+	margin:20px;
+}
